@@ -21,10 +21,10 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String username = request.getParameter("username");
+		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		LoginBean loginBean = new LoginBean();
-		loginBean.setUsername(username);
+		loginBean.setUsername(email);
 		loginBean.setPassword(password);
 
 		try {
@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
 				// HttpSession session = request.getSession();
 				// session.setAttribute("username",username);
 				// response.sendRedirect("WelcomePage.jsp");
-				RequestDispatcher rd = request.getRequestDispatcher("WelcomePage.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("Dashboard.jsp");
 				rd.include(request, response);
 
 			} else {

@@ -51,7 +51,7 @@ function validateForm()
                      </div>
                     <div class="login-content">
                         <div class="login-header ">
-                            <h3  style="font-family:courier;"><strong>LOGIN</strong></h3>
+                            <h3  style="font-family:courier;"><strong>SIGNIN</strong></h3>
                            
                         </div>
                         <div class="login-body">
@@ -59,7 +59,7 @@ function validateForm()
                             
                                 <div class="form-group ">
                                     <div class="pos-r">                                        
-                                        <input   id="uemail" type="email" name="username" placeholder="Enter E-mail" class="form-username form-control">
+                                        <input   id="uemail" type="email" name="email" placeholder="Enter E-mail" class="form-username form-control">
                                         <i class="fa fa-user"></i>
                                     </div>
                                 </div>
@@ -72,12 +72,17 @@ function validateForm()
    							 <div class="form-group">  
    							                           
  									<a href="ResetPassword.jsp">Reset Password</a> <br>
- 									<a href="ForgotPassword.jsp">Forgot Password?</a>
+ 									<a href="ForgotPassword.jsp" >Forgot Password?</a>
  									
-     						 </div> <br>
+     						 </div>
+								
                                 <div class="form-group">     
-                                    <button type="submit" class="btn btn-primary form-control"><strong>Sign in</strong></button>  
+                                    <button type="submit" class="btn btn-primary form-control"><strong>Login</strong></button>  
                                 </div>   
+                                
+                                <div class="mt-4 text-center">
+									Don't have an account? <a href="Registration.jsp">Create One</a>
+								</div>
                                                                               
                             </form>
                             

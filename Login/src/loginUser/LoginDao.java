@@ -18,7 +18,7 @@ public class LoginDao {
 
 				// Step 2:Create a statement using connection object
 				PreparedStatement preparedStatement = connection
-						.prepareStatement("select * from login where username = ? and password = ? ")) {
+						.prepareStatement("select * from reg where email = ? and password = ? ")) {
 			preparedStatement.setString(1, loginBean.getUsername());
 			preparedStatement.setString(2, loginBean.getPassword());
 

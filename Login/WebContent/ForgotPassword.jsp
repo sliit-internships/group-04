@@ -55,8 +55,11 @@ function validateForm()
                                     <div class="pos-r">                                        
                                         <input   id="uemail" type="email" name="uemail" placeholder="Enter E-mail" class="form-username form-control">
                                         <i class="fa fa-user"></i>
-                                    </div>
-                                </div><br><br>
+                                    </div><br>
+                                    <div class="form-text text-muted">
+										By clicking "Reset Password" we will send a password reset link
+									</div>
+                                </div>
                                 <!--  >div class="form-group">
                                     <div class="pos-r">                                    
                                         <input id="psw" type="password" name="psw" placeholder="Enter Password" class="form-password form-control" >
